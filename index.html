@@ -37,10 +37,10 @@
   /* ─── HERO / HOOK ─── */
   .hero {
     background: linear-gradient(160deg, var(--pink) 0%, var(--peach) 60%, var(--peach) 100%);
-    padding: 0 0 40px;
+    /* padding: 0 0 40px; */
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,9 +85,9 @@
   /* BIG product image centred */
   .hero-product-wrap {
     position: relative;
-    width: 260px;
-    height: 260px;
-    margin: 28px auto 0;
+    width: 100%;
+    height: 100%;
+    /* margin: 28px auto 0; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,20 +99,20 @@
     height: 100%;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,191,180,0.3) 70%);
-    animation: pulseRing 3s ease-in-out infinite;
+    /* animation: pulseRing 3s ease-in-out infinite; */
   }
   @keyframes pulseRing {
     0%,100%{transform:scale(1);opacity:1}
     50%{transform:scale(1.08);opacity:0.7}
   }
   .hero-product-wrap img {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     position: relative;
     z-index: 2;
     filter: drop-shadow(0 12px 32px rgba(0,0,0,0.18));
-    animation: floatImg 4s ease-in-out infinite;
+    /* animation: floatImg 4s ease-in-out infinite; */
   }
   @keyframes floatImg{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
@@ -602,7 +602,7 @@
     margin: 28px auto 0;
     border-radius: 20px;
     overflow: hidden;
-    height: 220px;
+    height: auto;
   }
   .doctor-img-wrap img {
     width: 100%;
@@ -674,7 +674,8 @@
   .offer-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(0,0,0,0.22); }
   .offer-card:active { transform: scale(0.97); }
   .offer-card-img {
-    width: 120px;
+    width: 180px;
+    height: auto;
     flex-shrink: 0;
     overflow: hidden;
   }
@@ -731,7 +732,7 @@
   }
   .use-step-img {
     width: 100%;
-    height: 190px;
+    height: 250px;
     object-fit: cover;
     border-radius: 18px;
     margin-bottom: 16px;
@@ -793,7 +794,7 @@
   .review-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.14); }
   .review-card-img {
     width: 100%;
-    height: 170px;
+    height: 350px;
     object-fit: cover;
     display: block;
     transition: transform 0.35s;
@@ -1134,6 +1135,20 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-topbar">🌿 Natural · Safe · Ayurveda-Inspired · Child-Friendly</div>
+    <!-- <div class="hero-brand">Kids<span>Veda</span></div> -->
+    <!-- <div class="hero-tagline">Natural Mind Support for Children</div> -->
+
+    <div class="hero-product-wrap">
+      <img src="./Image/Hook.png" alt="KidsVeda Product" loading="eager">
+    </div>
+
+   
+
+    <!-- <a class="hero-cta" href="#order">👉 Order Now – COD Available</a> -->
+  </section>
+
+  <!-- <section class="hero">
+    <div class="hero-topbar">🌿 Natural · Safe · Ayurveda-Inspired · Child-Friendly</div>
     <div class="hero-brand">Kids<span>Veda</span></div>
     <div class="hero-tagline">Natural Mind Support for Children</div>
 
@@ -1157,7 +1172,7 @@
     </div>
 
     <a class="hero-cta" href="#order">👉 Order Now – COD Available</a>
-  </section>
+  </section> -->
 
   <div class="clip-divider"></div>
 
@@ -1391,7 +1406,7 @@
 
       <div class="ing-item fade-in">
         <div class="ing-img">
-          <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=400&q=80" alt="Brahmi herb">
+          <img src="./Image/Ind1.png" alt="Brahmi herb">
         </div>
         <div class="ing-text">
           <div class="ing-name">🌿 Brahmi</div>
@@ -1401,7 +1416,7 @@
 
       <div class="ing-item fade-in">
         <div class="ing-img">
-          <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&q=80" alt="Ashwagandha">
+          <img src="./Image/Ind2.png" alt="Ashwagandha">
         </div>
         <div class="ing-text">
           <div class="ing-name">🌱 Ashwagandha</div>
@@ -1411,7 +1426,7 @@
 
       <div class="ing-item fade-in">
         <div class="ing-img">
-          <img src="https://images.unsplash.com/photo-1542444459-4008a10a0cde?w=400&q=80" alt="Shankhpushpi flowers">
+          <img src="./Image/Ind3.png" alt="Shankhpushpi flowers">
         </div>
         <div class="ing-text">
           <div class="ing-name">🌸 Shankhpushpi</div>
@@ -1421,7 +1436,7 @@
 
       <div class="ing-item fade-in">
         <div class="ing-img">
-          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80" alt="Jatamansi root">
+          <img src="./Image/Ind4.png" alt="Jatamansi root">
         </div>
         <div class="ing-text">
           <div class="ing-name">🌾 Jatamansi</div>
@@ -1432,7 +1447,9 @@
     </div>
   </section>
 
-  <div class="clip-divider-6"></div>
+  <!-- <div class="clip-divider-6"></div> -->
+    <div class="clip-divider-4"></div>
+
 
   <!-- DOCTOR / TRUST -->
   <section class="doctor-section">
@@ -1441,7 +1458,7 @@
     <p class="sec-body fade-in">Inspired by principles from Ministry of AYUSH, based on Ayurvedic understanding of Manas (mind) balance—focusing on root cause correction, not symptom suppression.</p>
 
     <div class="doctor-img-wrap fade-in">
-      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=450&q=80" alt="Ayurvedic doctor">
+      <img src="./Image/doctor.png" alt="Ayurvedic doctor">
       <div class="doctor-caption">Supports overall cognitive + emotional wellness through ancient wisdom</div>
     </div>
 
@@ -1455,6 +1472,46 @@
 
   <div class="clip-divider-7"></div>
 
+  <!-- HOW TO USE -->
+  <section class="use-section">
+    <p class="sec-label fade-in">Simple Daily Routine</p>
+    <h2 class="sec-title fade-in">How to Use KidsVeda</h2>
+
+    <div class="use-steps">
+
+      <div class="use-step fade-in">
+        <span class="use-step-num">1</span>
+        <img class="use-step-img" src="./Image/how4.png" alt="Give as per dosage">
+        <div class="use-step-title">Give as Per Recommended Dosage</div>
+        <div class="use-step-desc">Age-appropriate dosage—best taken daily for consistent, lasting results. Consistency is the key to visible improvement.</div>
+      </div>
+
+      <div class="use-step fade-in">
+        <span class="use-step-num">2</span>
+        <img class="use-step-img" src="./Image/how1.png" alt="Sleep routine">
+        <div class="use-step-title">Maintain Proper Sleep Routine</div>
+        <div class="use-step-desc">Combine with a consistent bedtime routine. Lights out by 9 PM allows KidsVeda to work with your child's natural rhythms.</div>
+      </div>
+
+      <div class="use-step fade-in">
+        <span class="use-step-num">3</span>
+        <img class="use-step-img" src="./Image/how2.png" alt="Limit screen time">
+        <div class="use-step-title">Limited Screen Time Daily</div>
+        <div class="use-step-desc">Reduce screen time to under 2 hours per day. KidsVeda helps ease the transition away from screen dependency.</div>
+      </div>
+
+      <div class="use-step fade-in">
+        <span class="use-step-num">4</span>
+        <img class="use-step-img" src="./Image/how3.png" alt="Healthy diet">
+        <div class="use-step-title">Combine with Healthy Diet</div>
+        <div class="use-step-desc">Use alongside the free diet chart included in your order for amplified cognitive and emotional benefits.</div>
+      </div>
+
+    </div>
+  </section>
+<!-- <div class="clip-divider-6"></div> -->
+  <!-- <div class="clip-divider-8"></div> -->
+
   <!-- OFFER -->
   <section class="offer-section">
     <p class="sec-label fade-in">🎉 Limited Time Offer</p>
@@ -1465,7 +1522,7 @@
 
       <div class="offer-card fade-in">
         <div class="offer-card-img">
-          <img src="https://images.unsplash.com/photo-1566888596782-c7f41cc184c5?w=300&q=80" alt="Free delivery">
+          <img src="./Image/Offer3.png" alt="Free delivery">
         </div>
         <div class="offer-card-body">
           <div class="offer-card-icon">🚚</div>
@@ -1476,7 +1533,7 @@
 
       <div class="offer-card fade-in">
         <div class="offer-card-img">
-          <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=300&q=80" alt="Free diet chart">
+          <img src="./Image/Offer2.png" alt="Free diet chart">
         </div>
         <div class="offer-card-body">
           <div class="offer-card-icon">📋</div>
@@ -1487,7 +1544,7 @@
 
       <div class="offer-card fade-in">
         <div class="offer-card-img">
-          <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=300&q=80" alt="COD available">
+          <img src="./Image/Offer1.png" alt="COD available">
         </div>
         <div class="offer-card-body">
           <div class="offer-card-icon">💵</div>
@@ -1498,7 +1555,7 @@
 
       <div class="offer-card fade-in">
         <div class="offer-card-img">
-          <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=300&q=80" alt="Discount offer">
+          <img src="./Image/Offer4.png" alt="Discount offer">
         </div>
         <div class="offer-card-body">
           <div class="offer-card-icon">🏷️</div>
@@ -1510,47 +1567,37 @@
     </div>
   </section>
 
-  <div class="clip-divider-8"></div>
+  <div class="clip-divider-9"></div>
 
-  <!-- HOW TO USE -->
-  <section class="use-section">
-    <p class="sec-label fade-in">Simple Daily Routine</p>
-    <h2 class="sec-title fade-in">How to Use KidsVeda</h2>
+   <!-- ORDER FORM -->
+  <section class="order-section" id="order">
+    <p class="sec-label">Order KidsVeda Now</p>
+    <h2 class="sec-title" style="color:var(--white)">Help Your Child Feel Calmer, More Focused, and Balanced—Starting Today</h2>
 
-    <div class="use-steps">
-
-      <div class="use-step fade-in">
-        <span class="use-step-num">1</span>
-        <img class="use-step-img" src="./Image/3.avif" alt="Give as per dosage">
-        <div class="use-step-title">Give as Per Recommended Dosage</div>
-        <div class="use-step-desc">Age-appropriate dosage—best taken daily for consistent, lasting results. Consistency is the key to visible improvement.</div>
+    <div class="order-form" id="orderForm">
+      <div class="order-info">
+        <div class="order-info-row">🚚 Free Delivery · 💵 COD Available · 🏷️ 10% Off Today · 📋 Free Diet Chart</div>
       </div>
+      <input type="text" id="fname" name="name" placeholder="Full Name" required>
+      <input type="tel" id="fphone" name="phone" placeholder="Phone Number" required>
+      <button class="order-submit" id="orderBtn" onclick="submitOrder()">
+        🛒 Place My Order – COD Available
+      </button>
+    </div>
 
-      <div class="use-step fade-in">
-        <span class="use-step-num">2</span>
-        <img class="use-step-img" src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=450&q=80" alt="Sleep routine">
-        <div class="use-step-title">Maintain Proper Sleep Routine</div>
-        <div class="use-step-desc">Combine with a consistent bedtime routine. Lights out by 9 PM allows KidsVeda to work with your child's natural rhythms.</div>
-      </div>
+    <div class="order-loader" id="orderLoader">
+      <div class="spinner"></div>
+      <div class="spinner-text">Placing your order…</div>
+    </div>
 
-      <div class="use-step fade-in">
-        <span class="use-step-num">3</span>
-        <img class="use-step-img" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=450&q=80" alt="Limit screen time">
-        <div class="use-step-title">Limited Screen Time Daily</div>
-        <div class="use-step-desc">Reduce screen time to under 2 hours per day. KidsVeda helps ease the transition away from screen dependency.</div>
-      </div>
-
-      <div class="use-step fade-in">
-        <span class="use-step-num">4</span>
-        <img class="use-step-img" src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=450&q=80" alt="Healthy diet">
-        <div class="use-step-title">Combine with Healthy Diet</div>
-        <div class="use-step-desc">Use alongside the free diet chart included in your order for amplified cognitive and emotional benefits.</div>
-      </div>
-
+    <div class="order-success" id="orderSuccess">
+      <div class="success-icon">🎉</div>
+      <div class="success-title">Order Placed Successfully!</div>
+      <div class="success-desc">Thank you! Our team will call you within 24 hours to confirm your order and delivery details.</div>
     </div>
   </section>
 
-  <div class="clip-divider-9"></div>
+  <div class="clip-divider-10"></div>
 
   <!-- REVIEWS -->
   <section class="review-section">
@@ -1560,7 +1607,7 @@
     <div class="review-list">
 
       <div class="review-card fade-in">
-        <img class="review-card-img" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=450&q=80" alt="Happy family Delhi">
+        <img class="review-card-img" src="./Image/Client1.png" alt="Happy family Delhi">
         <div class="review-card-body">
           <div class="review-stars">★★★★★</div>
           <div class="review-text">"Within 4 weeks, my child became calmer and more focused in studies. The anger outbursts reduced dramatically. I am so relieved as a mother."</div>
@@ -1569,7 +1616,7 @@
       </div>
 
       <div class="review-card fade-in">
-        <img class="review-card-img" src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=450&q=80" alt="Happy child Jaipur">
+        <img class="review-card-img" src="./Image/Client2.png" alt="Happy child Jaipur">
         <div class="review-card-body">
           <div class="review-stars">★★★★★</div>
           <div class="review-text">"Sleep improved and screen time reduced naturally. My son now sleeps by 9:30 PM on his own. We never thought this was possible before."</div>
@@ -1578,7 +1625,7 @@
       </div>
 
       <div class="review-card fade-in">
-        <img class="review-card-img" src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=450&q=80" alt="Social child Mumbai">
+        <img class="review-card-img" src="./Image/Client3.png" alt="Social child Mumbai">
         <div class="review-card-body">
           <div class="review-stars">★★★★★</div>
           <div class="review-text">"We noticed better eye contact and communication from our daughter. She is engaging more with family and friends. Truly a beautiful change."</div>
@@ -1591,7 +1638,7 @@
     <p class="review-note fade-in">* Results may vary for each child</p>
   </section>
 
-  <div class="clip-divider-10"></div>
+  <div class="clip-divider-12"></div>
 
   <!-- FAQ -->
   <section class="faq-section">
@@ -1643,44 +1690,7 @@
     </div>
   </section>
 
-  <div class="clip-divider-11"></div>
-
-  <!-- ORDER FORM -->
-  <section class="order-section" id="order">
-    <p class="sec-label">Order KidsVeda Now</p>
-    <h2 class="sec-title" style="color:var(--white)">Help Your Child Feel Calmer, More Focused, and Balanced—Starting Today</h2>
-
-    <div class="order-form" id="orderForm">
-      <div class="order-info">
-        <div class="order-info-row">🚚 Free Delivery · 💵 COD Available · 🏷️ 10% Off Today · 📋 Free Diet Chart</div>
-      </div>
-      <input type="text" id="fname" placeholder="Full Name" required>
-      <input type="tel" id="fphone" placeholder="Phone Number" required>
-      <input type="text" id="faddress" placeholder="Full Address (with Pincode)" required>
-      <select id="fqty">
-        <option value="">Select Quantity</option>
-        <option value="1">1 Bottle – ₹999 (10% Off)</option>
-        <option value="2">2 Bottles – ₹1799 (Best Value)</option>
-        <option value="3">3 Bottles – ₹2499 (Maximum Savings)</option>
-      </select>
-      <button class="order-submit" id="orderBtn" onclick="submitOrder()">
-        🛒 Place My Order – COD Available
-      </button>
-    </div>
-
-    <div class="order-loader" id="orderLoader">
-      <div class="spinner"></div>
-      <div class="spinner-text">Placing your order…</div>
-    </div>
-
-    <div class="order-success" id="orderSuccess">
-      <div class="success-icon">🎉</div>
-      <div class="success-title">Order Placed Successfully!</div>
-      <div class="success-desc">Thank you! Our team will call you within 24 hours to confirm your order and delivery details.</div>
-    </div>
-  </section>
-
-  <div class="clip-divider-12"></div>
+  <div class="clip-divider-13"></div>
 
   <!-- DISCLAIMER -->
   <section class="disclaimer-section">
