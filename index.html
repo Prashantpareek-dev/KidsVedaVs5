@@ -1460,7 +1460,7 @@
     <p class="sec-body fade-in">Inspired by principles from Ministry of AYUSH, based on Ayurvedic understanding of Manas (mind) balance—focusing on root cause correction, not symptom suppression.</p>
 
     <div class="doctor-img-wrap fade-in">
-      <img src="./Image/doctor.png" alt="Ayurvedic doctor">
+      <img src="./Image/Doctor.png" alt="Ayurvedic doctor">
       <div class="doctor-caption">Supports overall cognitive + emotional wellness through ancient wisdom</div>
     </div>
 
@@ -1581,7 +1581,7 @@
         <div class="order-info-row">🚚 Free Delivery · 💵 COD Available · 🏷️ 10% Off Today · 📋 Free Diet Chart</div>
       </div>
       <input type="text" id="fname" name="name" placeholder="Full Name" required>
-      <input type="tel" id="fphone" name="phone" placeholder="Phone Number" required>
+      <input type="tel" id="fphone" name="phone" maxlength="10" pattern="" placeholder="Phone Number" required>
       <button class="order-submit" id="orderBtn" onclick="submitOrder()">
         🛒 Place My Order – COD Available
       </button>
@@ -1766,9 +1766,9 @@
   function submitOrder() {
     const name = document.getElementById('fname').value.trim();
     const phone = document.getElementById('fphone').value.trim();
-    const address = document.getElementById('faddress').value.trim();
-    const qty = document.getElementById('fqty').value;
-    if (!name || !phone || !address || !qty) {
+    // const address = document.getElementById('faddress').value.trim();
+    // const qty = document.getElementById('fqty').value;
+    if (!name || !phone ) {
       alert('Please fill in all fields before placing your order.');
       return;
     }
